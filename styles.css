@@ -18,7 +18,6 @@ main{
     border:1px solid red;
     margin:20px auto;
     width:90%;
-    height:90vh;
 }
 
 .form{
@@ -52,5 +51,7 @@ main{
 main > img{
     margin:10px auto;
     display: block;
-    max-width:90%;
+    max-width:50%;
+    
+    
 }

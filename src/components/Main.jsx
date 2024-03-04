@@ -4,13 +4,14 @@ import MemesData from '../assets/MemesData';
 export default function Main(){
 
     const [meme,setmeme] = useState("https://i.imgflip.com/1g8my4.jpg");
-   
+    
+    const [allMemeimages,setallMemeimages] = useState(MemesData);
+
     function buttonClick(){
         const memesArray = MemesData.data.memes;
-        let randomnumber = Math.floor(Math.random() * memesArray.length)
-        let url = memesArray[randomnumber].url;
-        setmeme((meme)=> url)
-    
+        const randomnumber = Math.floor(Math.random() * memesArray.length)
+        
+        setmeme(memesArray[randomnumber].url);
     }
 
 
